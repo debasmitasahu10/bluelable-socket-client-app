@@ -1,0 +1,20 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="request">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element type="xs:string" name="EventType"/>
+        <xs:element name="event">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:int" name="UserPin"/>
+              <xs:element type="xs:int" name="DeviceId"/>
+              <xs:element type="xs:string" name="DeviceSer"/>
+              <xs:element type="xs:string" name="DeviceVer"/>
+              <xs:element type="xs:string" name="TransType"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
